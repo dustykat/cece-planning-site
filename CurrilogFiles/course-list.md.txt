@@ -1,0 +1,109 @@
+Course Number|Course Title|Remarks (ToDo)|Syllabus (Links)
+5102|Environmental Engineering Graduate Seminar |to do|links
+5185|Microbial Applications in Environmental Engineering Lab |to do|links
+5191|Advanced Water Treatment Lab |to do|links
+5300| |to do|links
+5301| |to do|links
+5302| |to do|links
+5303| |to do|links
+5304| |to do|links
+5305| |to do|links
+5306| |to do|links
+5307| |to do|links
+5308| |to do|links
+5309| |to do|links
+5310|Numerical Methods in Engineering |to do|links
+5311|Advanced Mechanics of Solids |to do|links
+5312| |to do|links
+5313|Theory of Elastic Stability |to do|links
+5314|Theory of Plates and Shells |to do|links
+5315| |to do|links
+5316| |to do|links
+5317| |to do|links
+5318|Finite Element Methods in Continuum Mechanics |to do|links
+5319| |to do|links
+5320| |to do|links
+5321|Advanced Soil Engineering|to do|links
+5322|Geotechnical Site Characterization |to do|links
+5323|Advanced Foundation Engineering |to do|links
+5324|Geotechnical Practice for Expansive Soils |to do|links
+5325|Vacant|to do|links
+5326|Stability Analysis and Design of Slopes and Embankments|to do|links
+5327| |to do|links
+5328|Design and Analysis of Earth Retaining Structures |to do|links
+5329|Advanced Design of Bridge Structures|to do|links
+5330| |to do|links
+5331|Advanced Work in Specific Fields |to do|links
+5332| |to do|links
+5333|Advanced Work in Water Resources|to do|links
+5334| |to do|links
+5335| |to do|links
+5336| |to do|links
+5337| |to do|links
+5338| |to do|links
+5339| |to do|links
+5340|Advanced Structural Analysis I |to do|links
+5341| |to do|links
+5342|Advanced Design of Steel Structures |to do|links
+5343|Advanced Reinforced Concrete Design |to do|links
+5344|Design of Steel Structures |to do|links
+5345| |to do|links
+5346|Structural Dynamics I |to do|links
+5347|Structural Dynamics II |to do|links
+5348|Wind Engineering |to do|links
+5349| |to do|links
+5350| |to do|links
+5351|Advanced Pavement Materials |to do|links
+5352|Advanced Flexible Pavement Design |to do|links
+5353| |to do|links
+5354|Advanced Concrete Materials |to do|links
+5355|Advanced Rigid Pavement Design |to do|links
+5356|Sustainable Material Systems and Engineering Design |to do|links
+5367| |to do|links
+5368| |to do|links
+5369| |to do|links
+5360|Open Channel Hydraulics |to do|links
+5361|Surface Water Hydrology |to do|links
+5362|Surface Water Modeling |to do|links
+5363|Groundwater Hydrology |to do|links
+5364|Groundwater Transport Phenomena |to do|links
+5365| |to do|links
+5366|Water Resources Management |to do|links
+5367| |to do|links
+5368|Surface Water Quality Modeling |to do|links
+5369| |to do|links
+5370| |to do|links
+5371|Advanced Geometric Design of Highways |to do|links
+5372|Advanced Traffic Engineering I: Highway Capacity Analysis |to do|links
+5373|Advanced Traffic Engineering II: Traffic Flow Theory and Control|to do|links
+5374| |to do|links
+5375| |to do|links
+5376| |to do|links
+5377| |to do|links
+5378| |to do|links
+5379| |to do|links
+5380| |to do|links
+5381| |to do|links
+5382| |to do|links
+5383|Bioremediation of Wastes in Soil Systems|to do|links
+5384| |to do|links
+5385|Micro Applications in Environmental Engineering |to do|links
+5385| |to do|links
+5386| |to do|links
+5387| |to do|links
+5388| |to do|links
+5389| |to do|links
+5390| |to do|links
+5391|Advanced Water Treatment |to do|links
+5392| |to do|links
+5393|Unit Processes Laboratory |to do|links
+5394|Natural Systems for Wastewater Treatment |to do|links
+5395|Solid and Hazardous Waste Treatment |to do|links
+5396| |to do|links
+5397| |to do|links
+5398| |to do|links
+5399| |to do|links
+6000|Master's Thesis |to do|links
+6330|Master's Report |to do|links
+7000|Research |to do|links
+8000|Doctor's Dissertation |to do|links

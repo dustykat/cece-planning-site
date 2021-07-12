@@ -1,0 +1,100 @@
+# atomickitty.arm64
+# initial updates
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+# change hostname
+sudo hostnamectl set-hostname atomickitty.arm64
+# create users
+sudo useradd -m -d /home/polaris -s /bin/bash polaris
+sudo useradd -m -d /home/antares -s /bin/bash antares
+sudo useradd -m -d /home/aquarius -s /bin/bash aquarius
+# set passwords
+compthik == id10tshare : engr 1330
+polaris == e1norte : ce 3372
+antares == sc0rpi0 : ce 5362
+aquarius == h2o$ign : 
+# install and configure apache
+sudo apt install apache2
+sudo systemctl status apache2
+sudo systemctl stop apache2
+# install R
+sudo apt-get install r-base-core
+sudo apt-get install r-base
+# install and configure JupyterHub
+sudo apt install -y python3-pip
+sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+sudo apt-get install python3-venv
+sudo python3 -m venv /opt/jupyterhub/
+sudo apt install nodejs npm
+sudo npm install -g configurable-http-proxy
+sudo /opt/jupyterhub/bin/python3 -m pip install wheel
+sudo /opt/jupyterhub/bin/python3 -m pip install jupyterhub jupyterlab
+sudo /opt/jupyterhub/bin/python3 -m pip install ipywidgets
+sudo mkdir -p /opt/jupyterhub/etc/jupyterhub/
+cd /opt/jupyterhub/etc/jupyterhub/
+sudo /opt/jupyterhub/bin/jupyterhub --generate-config
+EDIT THE CONFIG "c.Spawner.default_url = '/lab'"
+sudo mkdir -p /opt/jupyterhub/etc/systemd
+sudo nano /opt/jupyterhub/etc/systemd/jupyterhub.service
+INSERT <--
+[Unit]
+Description=JupyterHub
+After=syslog.target network.target
+
+[Service]
+User=root
+Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/jupyterhub/bin"
+ExecStart=/opt/jupyterhub/bin/jupyterhub -f /opt/jupyterhub/etc/jupyterhub/jupyterhub_config.py
+
+[Install]
+WantedBy=multi-user.target
+-->
+sudo ln -s /opt/jupyterhub/etc/systemd/jupyterhub.service /etc/systemd/system/jupyterhub.service
+sudo systemctl daemon-reload
+sudo systemctl enable jupyterhub.service
+sudo systemctl status jupyterhub.service
+sudo systemctl start jupyterhub.service
+
+# enable https
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+SSLCertificateFile      /etc/ssl/certs/apache-selfsigned.crt
+SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
+
+
+  texlive-lang-french texlive-latex-base texlive-latex-recommended
+  python-pil-doc python3-pil-dbg python-pygments-doc ttf-bitstream-vera
+  python-pyparsing-doc dvipng imagemagick-6.q16 latexmk libjs-mathjax
+  python3-sphinx-rtd-theme python3-stemmer sphinx-doc texlive-fonts-recommended
+  texlive-latex-extra texlive-plain-generic sgml-base-doc debhelper
+  gdb-doc python3-doc python3-pil.imagetk python3-gdbm-dbg python3-tk-dbg
+ghostscript-x imagemagick-doc autotrace cups-bsd | lpr | lprng enscript ffmpeg gimp gnuplot grads graphviz hp2xx html2ps
+libwmf-bin mplayer povray radiance sane-utils transfig ufraw-batch colord libfftw3-bin libfftw3-dev libgd-tools gvfs fonts-mathjax-extras fonts-stix libjs-mathjax-doc inkscape libjxr-tools librsvg2-bin libwmf0.2-7-gtk www-browser zathura-ps zathura-djvu zathura-cb
+
+sudo ln -s /media/data/home/ /usr/export/home
+sudo ln -s /media/data/html/ /usr/export/html
+
+sudo systemctl status apache2.service
+
+
+# install Xfce and TightVNC for a desktop
+sudo apt update
+sudo apt install xfce4 xfce4-goodies
+sudo apt install tightvncserver
+
+In ~/.vnc/xstartup 
+....
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
+....
+
+sudo ufw allow from 192.168.1.1/24 to any port 5901
+sudo ufw allow 'Apache Full'
+sudo ufw allow 'OpenSSH'
+
+## need to work on port forwarding, does not quite work right yet
+
+# install QEMU and Wine (future for x86-64 emulation)
+
+

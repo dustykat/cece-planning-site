@@ -1,0 +1,40 @@
+Environmental Engineering (ENVR)
+5000-Level
+#
+5107-Advanced Physical and Chemical Wastewater Treatment Lab 
+
+#
+5300-
+5301-
+5302-
+5303-Design of Air Pollution Control Systems 
+5304-
+5305-Environmental Systems Design I 
+5306-Environmental Systems Design II 
+5307-Advanced Physical and Chemical Municipal Wastewater Treatment
+5308-
+5309-
+#
+5310 - 
+5311 - 
+5312-
+5313-
+5314-Membrane Treatment Processes 
+5315-Environmental Inorganic Chemistry (name change ASAP)
+5316-Environmental Nanotechnology 
+5317-
+5318-
+5319-
+#
+5320-
+5325-Environmental Organic Chemistry (to be added)
+...
+5389-
+5385|Micro Applications in Environmental Engineering |to do|links
+#
+5390-Advanced Math for Environmental Engineers (new 5000 or 6000 level TBD)
+5392-Environmental Chemodynamics (modify to 6000 level)
+5399-Biological Municipal Wastewater Treatment 
+#
+6000-
+...

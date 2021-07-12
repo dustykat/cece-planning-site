@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "styles.css" >
+    </head>
+    <body>
+        
+        <div class="topnav">
+            <a class="active" href="../../">Site Home Page</a>
+            <a href="http://54.243.252.9:8000/"> JupterHub@atomickitty.aws (login as orion)</a>
+            <a href="#">RemoteDesktop@atomickitty.aws (pending) </a>
+            <a href="./CECE-1330-PsuedoCourse/"> placeholder</a>
+
+        </div>
+        
+	<div style="padding-left:16px">
+<h2>CECE Course Planning Site </h2>
+<p>The site is hosted on an Amazon Web Services Lightsail Instance and is not using TTU hardware or network infrastructure; as such users should not store any personal information.  Backups are daily. </p>
+        <p> The contents are intended for the use of CECE Faculty in course planning and development.  Authenticated users can directly edit the content files.</p>
+
+
+
+        </div>
+        
+<!-- ##################################################### -->        
+<button class="accordion">Course Catalogs</button>
+<div class="panel">
+<p><a href="./CourseCatalogs/2018_2019_catalog_TTU.pdf">2020-2021-TTU catalog</a> Copy of online catalog (.pdf)</p>
+<p><a href="./CourseCatalogs/2018_2019_catalog_TTU.pdf">2018-2019-TTU catalog</a> Copy of online catalog (.pdf)</p>
+<p><a href="./CourseCatalogs/2017-2018_catalog_TTU.pdf">2017-2018-TTU catalog</a> Copy of online catalog (.pdf)</p>
+<p>  </p>
+</div>
+        
+<!-- ##################################################### -->        
+<button class="accordion"> Graduate Course Numbers for CECE (CE,ENVE,CONE) </button>
+<div class="panel">
+<p>
+    <a href="./CE-current-courses/CECourseNumberList.txt"> CE Course numbers and names </a>
+    Current list (.txt) of CE courses (last update 2020-0915)
+</p>
+<p>
+    <a href="./ENVE-current-courses/ENVECourseNumberList.txt"> ENVE Course numbers and names </a>
+    Current list (.txt) of ENVE courses (last update 2020-0915)
+</p>
+<p>
+    <a href="./CONE-current-courses/CONECourseNumberList.txt"> CONE Course numbers and names </a>
+    Current list (.txt) of CONE courses (pending)
+</p>
+</div> 
+
+<!-- ##################################################### -->        
+<button class="accordion">Graduate & Faculty Handbooks</button>
+<div class="panel">
+<p><a href="./GFHandbooks/2020-21_faculty_handbook.pdf">2020-2021-Faculty Handbook</a> Copy of faculty handbook (.pdf)</p>
+<p><a href="./GFHandbooks/">placeholder</a> description of link </p>
+</div>
+
+<!-- ##################################################### -->        
+<button class="accordion">WCOE Common First Year </button>
+<div class="panel">
+    <p><a href="./CommonYear1/DownstreamCourses/"> Downstream Course Plan </a> CE/ENVE/CONE courses identified for downstream problem inclusion of common first year </p>
+    <p><a href="./CommonYear1/ComputationalThinking/"> Computational Thinking and Data Science  </a> CT/DS Working Directory.  <a href="http://54.243.252.9/engr-1330-psuedo-course/CECE-1330-PsuedoCourse/"> ENGR 1330 Sec 003/004 </a> Current content used in CECE-led sections </p>
+    <p><a href="./CommonYear1/BiologicalInfluencedDesign/"> Biological Inspired Design  </a> BID Stuff </p>
+    <p><a href="./CommonYear1/SocialTechnological/"> Social Technological Issues </a> ST Stuff </p>
+<p> words </p>
+</div>
+
+<!-- ##################################################### -->        
+<button class="accordion">On-Line Programs </button>
+<div class="panel">
+    <p><a href="./OnLinePrograms/"> On-line Programs </a> Working Directory, add target links when more content </p>
+<p> words </p>
+</div>       
+
+<!-- ##################################################### -->        
+<button class="accordion">Currilog Working Files</button>
+<div class="panel">
+<p><a href="./CurrilogFiles/CurrilogWorkbook.html"> Workbook (as html) </a> Working curriculum document, rendered as html (don't edit here, but editthe Jupyter Notebook instead) </p>
+<p><a href="./CurrilogFiles/Agenda21.html"> Agenda for 23 SEP 2020 </a> agenda document, rendered as html </p>
+    
+</div>
+
+<!-- ##################################################### -->        
+<button class="accordion">placeholder</button>
+<div class="panel">
+<p> words </p>
+<p> words </p>
+</div>
+    
+<!-- JavaScripts for this page -->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        }
+    }
+</script>
+
+    </body>
+</html>

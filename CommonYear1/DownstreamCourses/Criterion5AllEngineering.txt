@@ -1,0 +1,6 @@
+Criterion 5. Curriculum
+The curriculum requirements specify subject areas appropriate to engineering but do not prescribe specific courses. The program curriculum must provide adequate content for each area, consistent with the student outcomes and program educational objectives, to ensure that students are prepared to enter the practice of engineering. The curriculum must include:
+(a) a minimum of 30 semester credit hours (or equivalent) of a combination of college-level mathematics and basic sciences with experimental experience appropriate to the program.
+(b) a minimum of 45 semester credit hours (or equivalent) of engineering topics appropriate to the program, consisting of engineering and computer sciences and engineering design, and utilizing modern engineering tools.
+(c) a broad education component that complements the technical content of the curriculum and is consistent with the program educational objectives.
+(d) a culminating major engineering design experience that 1) incorporates appropriate engineering standards and multiple constraints, and 2) is based on the knowledge and skills acquired in earlier course work.

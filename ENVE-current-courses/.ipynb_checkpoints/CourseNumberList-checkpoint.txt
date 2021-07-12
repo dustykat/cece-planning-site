@@ -1,0 +1,82 @@
+# Occupied and Vacant List
+
+Civil Engineering (CE)
+
+5102—Environmental Engineering Graduate Seminar 
+5185—Microbial Applications in Environmental Engineering Lab 
+5191—Advanced Water Treatment Lab 
+
+
+5310—Numerical Methods in Engineering 
+5311—Advanced Mechanics of Solids 
+5312-5313—Theory of Elastic Stability 
+5314—Theory of Plates and Shells 
+5315-
+5316-
+5317-5318—Finite Element Methods in Continuum Mechanics 
+5319-
+
+5320-5321—Advanced Soil Engineering5322—Geotechnical Site Characterization 5323—Advanced Foundation Engineering 5324—Geotechnical Practice for Expansive Soils 5326—Stability Analysis and Design of Slopes and Embankments
+5327-5328—Design and Analysis of Earth Retaining Structures 
+5329—Advanced Design of Bridge Structures
+
+5330-5331—Advanced Work in Specific Fields 
+5332-5333—Advanced Work in Water Resources
+5334-
+5335-
+5336-
+5337-
+5338-
+5339- 
+5340—Advanced Structural Analysis I 5342—Advanced Design of Steel Structures 
+5343—Advanced Reinforced Concrete Design 5344—Design of Steel Structures 
+5345-5346—Structural Dynamics I 
+5347—Structural Dynamics II 5348—Wind Engineering 
+5349-
+
+5350-5351—Advanced Pavement Materials 
+5352—Advanced Flexible Pavement Design 
+5353-
+5354—Advanced Concrete Materials 5355—Advanced Rigid Pavement Design 5356—Sustainable Material Systems and Engineering Design 
+5367-
+5368-
+5369-
+5360—Open Channel Hydraulics 5361—Surface Water Hydrology 5362—Surface Water Modeling 
+5363—Groundwater Hydrology 5364—Groundwater Transport Phenomena 
+5365-5366—Water Resources Management 
+5367-5368—Surface Water Quality Modeling 
+5369-
+
+5370- 5371—Advanced Geometric Design of Highways 
+5372—Advanced Traffic Engineering I: Highway Capacity Analysis 
+5373—Advanced Traffic Engineering II: Traffic Flow Theory and Control
+5374-
+5375-
+5376-
+5377-
+5378-
+5379-5381-
+5382-5383—Bioremediation of Wastes in Soil Systems
+5384-
+5385—Micro Applications in Environmental Engineering 
+5385-
+5386-
+5387-
+5388-
+5389-
+
+5390-5391—Advanced Water Treatment 
+5392-5393—Unit Processes Laboratory 
+5394—Natural Systems for Wastewater Treatment 5395—Solid and Hazardous Waste Treatment 
+
+Environmental Engineering (ENGR)
+
+5107—Advanced Physical and Chemical Wastewater Treatment Lab 5303—Design of Air Pollution Control Systems 5305—Environmental Systems Design I 5306—Environmental Systems Design II 5307—Advanced Physical and Chemical Municipal Wastewater Treatment5308-
+5309-
+5310 — Environmental Inorganic Chemistry (just a suggestion of vacant number to use)
+5311 — Environmental Organic Chemistry (just a suggestion of vacant number to use)
+5312-
+5313-
+5314—Membrane Treatment Processes 5315—Environmental Chemistry for Pollution Management 5316—Environmental Nanotechnology 
+5390-Advanced Math for Environmental Engineers (new 5000 or 6000 level TBD)
+5392—Environmental Chemodynamics (modify to 6000 level)5399—Biological Municipal Wastewater Treatment 

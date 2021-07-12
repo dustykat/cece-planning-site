@@ -1,0 +1,33 @@
+Construction Engineering (CONE)
+#
+5031-Independent Study in Construction 
+#
+5300-
+5301-
+5302-Construction Safety and Risk Management 
+5303-
+5304-Sustainable Building Design and Construction
+#
+5310-
+5311-
+5314-Masonry Design and Construction 
+5315-
+#
+5320-Construction Cost Estimating and Control
+5321-
+5322-Construction Management
+
+#
+5330-
+5331-Special Topics in Construction Engineering 
+5332-BIM and 4D Modeling 
+
+#
+
+#
+6000-Master's Thesis 
+6330-Master's Report 
+#
+7000-Research 
+#
+8000-Dissertation 

@@ -1,0 +1,63 @@
+compthink -- shared environment for EGR1330
+
+
+build notes for Centos 7/8 running on a VPS
+
+1) create user
+-- add entry to sudoers file; give compthink sudo capability 
+installs are run as root from /home/compthink
+2) build VNC service
+3) add service to noVNC portal, put link on server. 
+4) verify can access via browser
+
+---- install anaconda environment
+
+1) download anaconda individual to 
+/home/compthink/Downloads
+2) Install dependencies
+
+(as root): yum install libXcomposite libXcursor libXi libXtst libXrandr alsa-lib mesa-libEGL libXdamage mesa-libGL libXScrnSaver
+
+3)Anaconda installl instructions state next step is to run the installer script 
+
+ bash ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh  
+    Does not work  when run as compthink
+    Does not work when run as root (& attempts install into wrong anaconda root)
+
+Instead create writeable directory in  /home/compthink
+
+[compthink@server ~]$ mkdir ~/tmpconda
+[compthink@server ~]$ TMPDIR=~/tmpconda bash ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh -u
+
+Then install proceedes as described on anaconda instructions
+
+4) verify install and configure a bit 
+(base) [compthink@server ~]$ python --version
+Python 3.7.6
+
+*** Exit and restart terminal shell
+
+[compthink@server ~]$ conda config --set auto_activate_base True <<< vital to get correct python environment
+if (base) prefix missing atomickitty reverts to python 2.XX
+
+Will ignore pycharm for now and try to get a jupyter environment working
+
+--- install jupyter
+(base) [compthink@server ~]$ conda install -c conda-forge notebook
+
+This does not work out of the box, need to install jupyter from deb/rpm repos
+sudo yum install jupyter
+
+Then use the conda installer
+
+set a notebook password, make same as browser
+
+--- build Jupyter Launcher (specific to my server)
+#!/bin/bash
+#Launcher script to start Jupyter server this user
+cd /home/compthink/Desktop
+xfce4-terminal -e 'bash -c "/home/compthink/anaconda3/bin/jupyter notebook --port 9999; bash"' -T "With drops of Jupiter in her hair"
+# this script runs until terminated
+
+--- REMOVE compthink from sudoers 
+--- Verify compthink CANNOT sudo
