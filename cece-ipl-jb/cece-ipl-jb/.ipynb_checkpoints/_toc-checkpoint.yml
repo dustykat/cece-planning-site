@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: feasibilities/feasibilities
+- file: bioinspire/nature-inspired-one
+- file: statics-truss/statics
+- file: hydrology/EvaporationAnalysis
+- file: bioinspire/nature-inspired-two
+- file: software-responsible/softwareQA # comment
