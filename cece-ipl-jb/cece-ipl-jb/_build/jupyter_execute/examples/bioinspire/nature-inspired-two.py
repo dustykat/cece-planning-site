@@ -15,7 +15,7 @@
 # **Prerequesites**
 # 
 # >- Students will have completed ENGR-1320
-# >- Students are enrolled in CE 4385
+# >- Students are enrolled in ENVE 4385
 # 
 # **Problem Modality (and Solution)**
 # 
