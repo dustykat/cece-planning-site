@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computational Thinking in Engineering Mechanics &#8212; CECE Downstream IPL</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CE 2301 Statics - Inspiration" href="../statics-inspiration/statics-inspiration.html" />
+    <link rel="prev" title="CE 2201 Materials for Constructed Facilities" href="../bioinspire/nature-inspired-one.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/ipl-logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CECE Downstream IPL</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome to the CECE Instructor Problem Library
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../feasibilities/feasibilities.html">
+   Feasibilities
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bioinspire/nature-inspired-one.html">
+   CE 2201 Materials for Constructed Facilities
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Computational Thinking in Engineering Mechanics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../statics-inspiration/statics-inspiration.html">
+   CE 2301 Statics - Inspiration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../statics-truss/statics.html">
+   CE 2301 Engineering Mechanics (Statics)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hydrology/EvaporationAnalysis.html">
+   CE 3354 Engineering Hydrology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bioinspire/nature-inspired-two.html">
+   CE 4385 Microbial  Applications  in  Environmental  Engineering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-responsible/softwareQA.html">
+   CE XXXX Title
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fluids-fishrace/fluids.html">
+   How to make an ordinary homework problem into a computational thinking exercise - Fluid Mechanics
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/examples/background/mechanics-bg.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fexamples/background/mechanics-bg.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/examples/background/mechanics-bg.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problem-formulation">
+     Problem Formulation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-organization">
+     Data Organization
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-abstraction">
+     Data Abstraction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#automating-solutions">
+     Automating solutions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessing-possible-solutions-to-obtain-the-most-effective-combination">
+     Assessing possible solutions to obtain the most effective combination.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generalizing-to-a-wide-variety-of-solutions">
+     Generalizing to a wide variety of solutions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="computational-thinking-in-engineering-mechanics">
+<h1>Computational Thinking in Engineering Mechanics<a class="headerlink" href="#computational-thinking-in-engineering-mechanics" title="Permalink to this headline">¶</a></h1>
+<p>This document examines how computational thinking fits into engineering mechanics courses at TTU in particular:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page and similar are one faculty member’s professional interpretation of the task to integrate, or downstream common year 1 items into the CECE curriculum.  Specifically, in this case, Computational Thinking.  There are similar treatises for the other two common topics; Nature Inspired Design, and Socio-Technological Aspects of Engineering.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Jeannette Wing, 2006 <a class="reference external" href="http://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf">http://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf</a> coined the term “computational thinking” (CT) to articulate a vision that everyone, not just those who major in computer science, can benefit from thinking like a computer scientist, but afterwards gave the following definition of CT:</p>
+<blockquote>
+<div><p><em>Computational Thinking is the thought processes involved in formulating problems and their solutions so that the solutions are represented in a form that can be effectively carried out by an information-processing agent</em></p>
+</div></blockquote>
+<p>The ongoing interpretation of that original vision is that computational thinking is a problem-solving process that includes the following characteristics (Varela and others, 2019):</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These characteristics are essentially uncontested, Dogma if you will.</p>
+</div>
+<ul class="simple">
+<li><p>Formulating problems in a way that it is <strong>possible</strong> to use a computer and <strong>other tools</strong> in their resolution.</p></li>
+<li><p>Organizing data logically and analyzing them.</p></li>
+<li><p>Representing data through abstractions.</p></li>
+<li><p>Automating solutions.</p></li>
+<li><p>Identifying, analyzing and implementing possible solutions in order to obtain the most effective combination.</p></li>
+<li><p>Generalizing and transferring this process to a wide variety of solutions.</p></li>
+</ul>
+<p>The remainder of this document examines each item in depth.</p>
+<div class="section" id="problem-formulation">
+<h3>Problem Formulation<a class="headerlink" href="#problem-formulation" title="Permalink to this headline">¶</a></h3>
+<p>With the above concepts in play CT in Mechanics would implement the first item unchanged from the past as to how statics problems are formulated. <strong>Past problem formulation approaches are valid, effective, and fit the CT paradigm - no modification necessary</strong>. There will be some value to selecting some problems with a computer solution in mind, but nothing special is needed.</p>
+</div>
+<div class="section" id="data-organization">
+<h3>Data Organization<a class="headerlink" href="#data-organization" title="Permalink to this headline">¶</a></h3>
+<p>The second concept of CT in Mechanics refers to data organization.  The past methods of listing <em>known</em> values (and their sources such as table look-up) and <em>unknown</em> or sought values is still valid and effective.  A listing of governing principls to be applied <span class="math notranslate nohighlight">\(F=m \cdot a\)</span> and such will continue to suffice to satisfy the task
+<em>Organizing data logically and analyzing them.</em>  The adverb or adjective (not sure of author’s intent) “logically” is a value judgement; the clause <em>analyzing them</em> is vague and obviously an obfuscation.   In CECE Mechanics Courses a listing of known,unknown, and governing equations will suffice and be emphasized, citation of data sources (URL, or tables in books) is considered vital and is also emphasized.  As in the previous item <strong>Past problem formulation approaches are valid, effective, and fit the CT paradigm - no major modification necessary; emphasis on data source identification needs inclusion/emphasis</strong>.</p>
+</div>
+<div class="section" id="data-abstraction">
+<h3>Data Abstraction<a class="headerlink" href="#data-abstraction" title="Permalink to this headline">¶</a></h3>
+<p>The next item in the list <em>Representing data through abstractions</em> as a practical matter refers to model(s) of the mechanics under consideration.  In past and present contexts the sketching of a situation and formulation of sets of equations describing the kinematics, forces, and accelerations constitutes the major abstraction.  The replacement of distributed forces with equivalent point forces and similar superpositional-type models are typical abstractions.</p>
+<p>As such, drawing the Free-Body Diagram (FBD) and substitution of user-defined forces into the governing equations of the previous component is data abstraction!  If the data are stochastic in some sense then their explicit values being replaced with an estimate from their underlying probability distribution would similarily be data abstraction.</p>
+<p>In CECE Mechanics Courses</p>
+<ul class="simple">
+<li><p>a drawing of a coordinate system,</p></li>
+<li><p>a FBD (or multiple diagrams as necessary, especially if there are contact forces involved),</p></li>
+<li><p>naming and line of application conventions for the forces comprises the major data abstraction activity.</p></li>
+<li><p>substitution of these named forces into governing equations</p></li>
+</ul>
+<p>constitutes data abstraction and creates the data model for the problem.  <strong>Past problem formulation approaches regarding the abstraction/modeling step are valid, and fit the CT paradigm - no major modification necessary</strong></p>
+</div>
+<div class="section" id="automating-solutions">
+<h3>Automating solutions<a class="headerlink" href="#automating-solutions" title="Permalink to this headline">¶</a></h3>
+<p>The automation of solutions (need more verbiage here)</p>
+<p><strong>Past problem approaches need modification to provide practice in automation.  One approach is to build a generic solution, but to emphasize auotmation, provide multiple inputs and require each case be solved.  Enough cases will force automation</strong> The instructor needs to be open to the possibility of an entire class conspiring to manually handle each input - but thats teamwork, something else to be encouraged!</p>
+</div>
+<div class="section" id="assessing-possible-solutions-to-obtain-the-most-effective-combination">
+<h3>Assessing possible solutions to obtain the most effective combination.<a class="headerlink" href="#assessing-possible-solutions-to-obtain-the-most-effective-combination" title="Permalink to this headline">¶</a></h3>
+<p>This is a bullshit characteristic, but will work up something</p>
+<ul class="simple">
+<li><p>Do nothing “solution”</p></li>
+<li><p>Steal IP from someone else “solution”</p></li>
+<li><p>Beat to death with numerics (that sounds computational!)</p></li>
+<li><p>Throw money at the problem, let the crowd find an answer</p></li>
+<li></li>
+</ul>
+</div>
+<div class="section" id="generalizing-to-a-wide-variety-of-solutions">
+<h3>Generalizing to a wide variety of solutions<a class="headerlink" href="#generalizing-to-a-wide-variety-of-solutions" title="Permalink to this headline">¶</a></h3>
+<p>Also somewhat bullshit.  See “automation” above.  Concievably generic “solvers” in an on-line venue handles generalization. Then problem formulation is the vital step.</p>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Wing, J. (2006). <em>Computational Thinning</em> COMMUNICATIONS OF THE ACM March 2006/Vol. 49, No. 3. <a class="reference external" href="http://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf">http://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf</a></p></li>
+<li><p>Concepción Varela, Carolina Rebollar, Olatz García Eugenio, and Bravo Javier Bilbao. (2019) <em>Skills in computational thinking of engineering students of the first school year</em> Helyion. Vol. 5, No. 11, DOI: <a class="reference external" href="https://doi.org/10.1016/j.heliyon.2019.e02820">https://doi.org/10.1016/j.heliyon.2019.e02820</a></p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./examples/background"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../bioinspire/nature-inspired-one.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">CE 2201 Materials for Constructed Facilities</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../statics-inspiration/statics-inspiration.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">CE 2301 Statics - Inspiration</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Department of Civil, Environmental, and Construction Engineering<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

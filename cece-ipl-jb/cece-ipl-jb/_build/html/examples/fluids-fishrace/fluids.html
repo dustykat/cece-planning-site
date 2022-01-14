@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to make an ordinary homework problem into a computational thinking exercise - Fluid Mechanics &#8212; CECE Downstream IPL</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="CE XXXX Title" href="../software-responsible/softwareQA.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/ipl-logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CECE Downstream IPL</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome to the CECE Instructor Problem Library
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../feasibilities/feasibilities.html">
+   Feasibilities
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bioinspire/nature-inspired-one.html">
+   CE 2201 Materials for Constructed Facilities
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../statics-truss/statics.html">
+   CE 2301 Engineering Mechanics (Statics)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hydrology/EvaporationAnalysis.html">
+   CE 3354 Engineering Hydrology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bioinspire/nature-inspired-two.html">
+   CE 4385 Microbial  Applications  in  Environmental  Engineering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-responsible/softwareQA.html">
+   CE XXXX Title
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   How to make an ordinary homework problem into a computational thinking exercise - Fluid Mechanics
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/examples/fluids-fishrace/fluids.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fexamples/fluids-fishrace/fluids.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/examples/fluids-fishrace/fluids.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   How to make an ordinary homework problem into a computational thinking exercise - Fluid Mechanics
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prerequesites-for-this-example">
+     Prerequesites (for this example)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methodology-for-problem-and-solution">
+     Methodology for Problem (and Solution)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-statement-cite-source">
+   Problem Statement (Cite Source)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problem-solving-protocol">
+     Problem Solving Protocol
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#known-values">
+       Known Values:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#unknown-values">
+       Unknown Values
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#governing-principles">
+       Governing Principles
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#abstraction-the-control-volume-diagram">
+     Abstraction – The Control Volume Diagram
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#decomposition-continunity-analysis">
+     Decomposition - Continunity Analysis
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#decomposition-momentum-analysis">
+     Decomposition - Momentum Analysis
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#guess-check-refine-approach">
+     Guess-Check-Refine Approach
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#references">
+     References
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="how-to-make-an-ordinary-homework-problem-into-a-computational-thinking-exercise-fluid-mechanics">
+<h1>How to make an ordinary homework problem into a computational thinking exercise - Fluid Mechanics<a class="headerlink" href="#how-to-make-an-ordinary-homework-problem-into-a-computational-thinking-exercise-fluid-mechanics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prerequesites-for-this-example">
+<h2>Prerequesites (for this example)<a class="headerlink" href="#prerequesites-for-this-example" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Students will have completed ENGR-1330; CE 2301; and be enrolled in CE 3305</p></li>
+<li><p>Students (by virtue of ENGR-1330) will have functioning implementations of JupyterLab</p></li>
+</ul>
+</div>
+<div class="section" id="methodology-for-problem-and-solution">
+<h2>Methodology for Problem (and Solution)<a class="headerlink" href="#methodology-for-problem-and-solution" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Present problem verbatim from usual source, i.e. textbook</p></li>
+<li><p>Review main principles of CT :</p></li>
+<li><p>Algorithm - A list of steps that you can follow to finish a task</p></li>
+<li><p>Decomposition - Break a problem down into smaller pieces</p></li>
+<li><p>Abstraction - Pulling out specific differences to make one solution work for multiple problems</p></li>
+<li><p>Pattern Matching - Finding similarities between things</p></li>
+<li><p>CT Problem Solving Protocol (from ENGR-1330)</p></li>
+<li><p>Explicitly state the problem</p></li>
+<li><p>State:
+- Input information
+- Governing equations or principles, and
+- The required output information.</p></li>
+<li><p>Work a sample problem by-hand for testing the general solution.</p></li>
+<li><p>Develop a general solution method (coding).</p></li>
+<li><p>Test the general solution against the by-hand example, then apply to the real problem.</p></li>
+<li><p>Start the problem/solution example; explicitly identify CT principles as problem proceedes.</p></li>
+<li><p>Choose meaningful problems</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="problem-statement-cite-source">
+<h1>Problem Statement (Cite Source)<a class="headerlink" href="#problem-statement-cite-source" title="Permalink to this headline">¶</a></h1>
+<p>Jet-type pumps are often used for special applications, such as to circulate the flow in basins in which fish are farmed.  The use of a jet-pump reduces mechanical injury to the fish.</p>
+<p>Figures 1 and 2 show the basic concept for this application of a jet pump.<br />
+<img alt="" src="../../_images/planview.png" /></p>
+<!--|Figure 1|Plan View of a fish race||
+|:---|:---|---:|-->
+<p><img alt="" src="../../_images/elevationview.png" /></p>
+<!--|Figure 2|Elevation detail of a fish race jet pump||
+|:---|:---|---:|-->
+<p>For this type of basin the jets would have to increase the water surface elevation by an amount equal to <span class="math notranslate nohighlight">\(\frac{6V^2}{2g}\)</span>, where <span class="math notranslate nohighlight">\(V\)</span> is the average velocity in the basin ( <span class="math notranslate nohighlight">\(1~\frac{ft}{s}\)</span> as shown in the figures).  Propose a basic design for a jet system that would make such a recirculating system work for a channel <span class="math notranslate nohighlight">\(8\)</span> ft wide and <span class="math notranslate nohighlight">\(4\)</span> ft deep. That is determine the nozzle diameter, speed, and number of nozzles. The design should specify nominal diameters of nozzles using commercially available pipes (1-in., 2-in, …).  How do the specifications change if the desired water depth is to be <span class="math notranslate nohighlight">\(6\)</span> feet deep (to accomodate more fish)</p>
+<p><em><strong>Hint</strong></em> This problem involves “analysis” to determine the required momentum added by the jets and the total jet area and speed The design should be based on this analysis with an understanding that the total jet area should be small as compared to the total flow area (otherwise the fish could get stuck!).</p>
+<div class="section" id="problem-solving-protocol">
+<h2>Problem Solving Protocol<a class="headerlink" href="#problem-solving-protocol" title="Permalink to this headline">¶</a></h2>
+<p>Recall the problem solving protocols in ENGR-1330 <a class="reference external" href="https://3.137.111.182/engr-1330-webroot/1-Lessons/Lesson02/OriginalPowerpoint/ENGR-1330-Lesson2.html">https://3.137.111.182/engr-1330-webroot/1-Lessons/Lesson02/OriginalPowerpoint/ENGR-1330-Lesson2.html</a></p>
+<ol class="simple">
+<li><p>Define the problem (problem statement)</p></li>
+<li><p>Gather information (identify known and unknown values, and governing equations)</p></li>
+<li><p>Generate and evaluate potential solutions</p></li>
+<li><p>Refine and implement a solution</p></li>
+<li><p>Verify and test the solution.</p></li>
+</ol>
+<p>We can stipulate that Step 1 is already done,</p>
+<div class="section" id="known-values">
+<h3>Known Values:<a class="headerlink" href="#known-values" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Geometry</p></li>
+<li><p>Liquid (Water) ( if we need properties we can get them from <a class="reference external" href="http://theodore-odroid.ttu.edu/documents/toolbox/fluidmechanics/WaterPropertiesUS/WaterPropertiesUS.html">http://theodore-odroid.ttu.edu/documents/toolbox/fluidmechanics/WaterPropertiesUS/WaterPropertiesUS.html</a>, or something similar</p></li>
+</ul>
+</div>
+<div class="section" id="unknown-values">
+<h3>Unknown Values<a class="headerlink" href="#unknown-values" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Jet diameter</p></li>
+<li><p>Jet speed</p></li>
+<li><p>Jet count (number of jets)</p></li>
+</ul>
+</div>
+<div class="section" id="governing-principles">
+<h3>Governing Principles<a class="headerlink" href="#governing-principles" title="Permalink to this headline">¶</a></h3>
+<p>These are going to be problem and discipline specific; in this case conservation of mass and momentum are going to be required.</p>
+</div>
+</div>
+<div class="section" id="abstraction-the-control-volume-diagram">
+<h2>Abstraction – The Control Volume Diagram<a class="headerlink" href="#abstraction-the-control-volume-diagram" title="Permalink to this headline">¶</a></h2>
+<p>At this point we are mostly trying to develop an algorithm, but are already about to apply <strong>abstraction</strong> when we create a Control-Volume Diagram of the mixing zone depicted in Figure 2.</p>
+<p><img alt="" src="../../_images/cvdiagram.png" /></p>
+<!--|Figure 3|Control Volume Diagram of Mixing Zone||
+|:---|:---|---:|-->
+<p>Examining the diagram, we will further abstract by defining variables for our problem:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{gather} \end{gather}\]</div>
+<p><span class="math notranslate nohighlight">\( \begin{gather} 
+\begin{aligned}
+&amp; F_1 == \text{Pressure force on approach face of mixing zone   } \\
+&amp; F_2 == \text{Pressure force on exit face of mixing zone       } \\
+&amp; u_1 == \text{Free stream speed on approach face of mixing zone} \\
+&amp; u_2 == \text{Free stream speed on exit face of mixing zone    } \\
+&amp; u_j == \text{Jet stream speed in mixing zone                  } \\
+&amp; A_1 == \text{Free stream area of approach face of mixing zone } \\
+&amp; A_2 == \text{Free stream ares of exit face of mixing zone     } \\
+&amp; A_j == \text{Jet stream speed in mixing zone                  } \\
+\end{aligned}
+\end{gather}\)</span></p>
+</div>
+<div class="section" id="decomposition-continunity-analysis">
+<h2>Decomposition - Continunity Analysis<a class="headerlink" href="#decomposition-continunity-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Recall the continunity result from the Reynolds Transport Theorem:</p>
+<p><span class="math notranslate nohighlight">\(0 = \frac{\partial}{\partial t}\int_{CV}  \rho dV + \int_{CS} \rho(V \cdot dA) \)</span></p>
+<p>Substitute the geometry from the problem conditions into the flux integral (the volume integral  vanishes because we are considering steady flow) as</p>
+<p><span class="math notranslate nohighlight">\(0 = \rho u_2 A_2 - \rho u_1 A_1 - \rho u_j A_j \)</span> where</p>
+<p><span class="math notranslate nohighlight">\(~~~~~A_1 = W \cdot (y_1 - \Delta y)\)</span></p>
+<p><span class="math notranslate nohighlight">\(~~~~~A_2 = W \cdot (y_2)\)</span></p>
+<p><span class="math notranslate nohighlight">\(~~~~~A_j = W \cdot (\Delta y)\)</span></p>
+<p><span class="math notranslate nohighlight">\(~~~~~W = \text{width of channel} \)</span></p>
+<p>Notice that if the channel is a constant width, and we stipulate that the liquid is incompressible so that the density is some constant, we can factor these out to obtain</p>
+<p><span class="math notranslate nohighlight">\(0= u_2  \cdot (y_2) - u_1  \cdot (y_1 - \Delta y) - u_j  \cdot (\Delta y)\)</span></p>
+<p>Rewrite in terms of <span class="math notranslate nohighlight">\(u_2\)</span> as:</p>
+<p><span class="math notranslate nohighlight">\(u_2  \cdot (y_2) = u_1  \cdot (y_1 - \Delta y) + u_j  \cdot (\Delta y)\)</span></p>
+<p>Divide by <span class="math notranslate nohighlight">\(y_2\)</span> to obtain <span class="math notranslate nohighlight">\(u_2\)</span> (which we will substitute into momentum shortly!)</p>
+<p><span class="math notranslate nohighlight">\(u_2   = \frac{u_1  \cdot (y_1 - \Delta y) + u_j  \cdot (\Delta y)}{y_2}\)</span></p>
+</div>
+<div class="section" id="decomposition-momentum-analysis">
+<h2>Decomposition - Momentum Analysis<a class="headerlink" href="#decomposition-momentum-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Recall the momentum result from the Reynolds Transport Theorem:</p>
+<p><span class="math notranslate nohighlight">\(\sum F_x = \frac{\partial}{\partial t}\int_{CV} V \rho dV + \int_{CS} V\rho(V \cdot dA) \)</span></p>
+<p>Consider force diffference:</p>
+<p><span class="math notranslate nohighlight">\(F_1 - F_2 = -u_j~\rho~u_j A_j - u_1 \rho u_1 A_1 + u_2 \rho u_2 A_2\)</span> where</p>
+<p><span class="math notranslate nohighlight">\(~~~~~A_1 = W \cdot (y_1 - \Delta y)\)</span></p>
+<p><span class="math notranslate nohighlight">\(~~~~~A_2 = W \cdot (y_2)\)</span></p>
+<p><span class="math notranslate nohighlight">\(~~~~~A_j = W \cdot (\Delta y)\)</span></p>
+<p><span class="math notranslate nohighlight">\(~~~~~W = \text{width of channel} \)</span></p>
+<p>Stipulate hydrostatic pressure forces at upstream and downstream faces</p>
+<p><span class="math notranslate nohighlight">\(F_1 = \rho g \frac{y_1}{2} y_1 W\)</span></p>
+<p><span class="math notranslate nohighlight">\(F_2 = \rho g \frac{y_2}{2} y_2 W\)</span></p>
+<p>Now substitute into the momentum balance for the control volume</p>
+<p><span class="math notranslate nohighlight">\(\rho g W (\frac{y_1^2}{2} - \frac{y_2^2}{2}) = -u_j~\rho~u_j W \cdot (\Delta y) - u_1 \rho u_1 W \cdot (y_1 - \Delta y) + u_2 \rho u_2 W \cdot (y_2)\)</span></p>
+<p>Notice that if the channel is a constant width, and we stipulate that the liquid is incompressible so that the density is some constant, we can factor these out to obtain</p>
+<p><span class="math notranslate nohighlight">\( g  (\frac{y_1^2}{2} - \frac{y_2^2}{2}) = -u_j~u_j  \cdot (\Delta y) - u_1  u_1  \cdot (y_1 - \Delta y) + u_2  u_2  \cdot (y_2)\)</span></p>
+<p>Now arrange momentum in terms of the jet as</p>
+<p><span class="math notranslate nohighlight">\( u_j^2 ~\Delta y = - u_1^2(y_1 - ~ \Delta y) + u_2^2~y_2 - \frac{g}{2}(y_1^2 - y_2^2)\)</span></p>
+<p>Substitute <span class="math notranslate nohighlight">\(u_2\)</span> from continunity</p>
+<p><span class="math notranslate nohighlight">\( u_j^2 ~\Delta y = - u_1^2(y_1 - ~ \Delta y) + [\frac{ u_1~(y_1 - ~ \Delta y) - u_j ~\Delta y}{y_2}]^2~y_2 - \frac{g}{2}[y_1^2 - y_2^2]\)</span></p>
+<p>This equation is our model, it is implicit in <span class="math notranslate nohighlight">\( u_j^2 ~\Delta y\)</span>, hence almost requires a computational approach to find a solution.</p>
+<p>As a first step, lets try a predictor-correction approach - that is we will simply guess values for cetrain unknowns, and see how close we can make thw two sides of the model agree.</p>
+</div>
+<div class="section" id="guess-check-refine-approach">
+<h2>Guess-Check-Refine Approach<a class="headerlink" href="#guess-check-refine-approach" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Verify what we know about the problem:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(u_1 = 1 \text{ft/sec  (given)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y_1 = 4 \text{ft (given)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y_2 = 4 + \frac{6(1)^2}{2(32.2)} = 4.0932 \text{ft  (indirectly given)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(u_2 = f(u_j,\Delta y) \text{ (model equation)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(u_j = \text{unknown}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta y = \text{unknown}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(g = 32.2 \text{ft/sec/sec  (given)}\)</span></p></li>
+</ul>
+</li>
+</ul>
+<p>Keep in mind that <span class="math notranslate nohighlight">\(\Delta y\)</span> is proportional to the jet area, and the jets are small (unless we want to make our facility into a Bass-o-Matic <a class="reference external" href="https://www.youtube.com/watch?v=c06HorsmhjY">https://www.youtube.com/watch?v=c06HorsmhjY</a></p>
+<p>We will rearrange our model equation above, by dividing by <span class="math notranslate nohighlight">\(\Delta y\)</span></p>
+<p><span class="math notranslate nohighlight">\( u_j^2  = \frac{- u_1^2(y_1 - ~ \Delta y) + [\frac{ u_1~(y_1 - ~ \Delta y) - u_j ~\Delta y}{y_2}]^2~y_2 - \frac{g}{2}[y_1^2 - y_2^2]}{\Delta y}\)</span></p>
+<p>Then gather all the terms involving <span class="math notranslate nohighlight">\(u_j\)</span> onto the left hand side as</p>
+<p><span class="math notranslate nohighlight">\( u_j^2 - \frac{u_j^2 \Delta y}{y_2} + \frac{2 u_1 (y_1 - \Delta y)}{y_2} = \frac{- u_1^2(y_1 - ~ \Delta y)}{\Delta y} + \frac{u_1^2 (y_1 - \Delta y)^2}{y_2 \Delta y} - \frac{g}{2 \Delta y}[y_1^2 - y_2^2]\)</span></p>
+<p>Now we are ready for computation - if we “pick” <span class="math notranslate nohighlight">\(\Delta y\)</span> the only unknown is <span class="math notranslate nohighlight">\(u_j\)</span>; therefore solvable. If we make a set of guesses, we can compute required jet speed and jet total area.</p>
+<p>First some preliminary coding, to use different jet speeds for a given <span class="math notranslate nohighlight">\(\Delta y\)</span></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dy</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1">#delta y</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">8.0</span>
+<span class="n">grav</span> <span class="o">=</span> <span class="mf">32.2</span> <span class="c1"># gravitational acceleration constant (US Customary Units)</span>
+<span class="n">u1</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="c1">#free stream approach</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="mf">4.0</span> <span class="c1">#approach depth</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="n">y1</span> <span class="o">+</span> <span class="mf">6.0</span><span class="o">*</span><span class="p">(</span><span class="n">u1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">grav</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rhs</span> <span class="o">=</span> <span class="o">-</span><span class="n">u1</span><span class="o">*</span><span class="n">u1</span><span class="o">*</span><span class="p">(</span><span class="n">y1</span><span class="o">-</span><span class="n">dy</span><span class="p">)</span><span class="o">/</span><span class="n">dy</span> <span class="o">+</span> <span class="p">(</span><span class="n">u1</span><span class="o">*</span><span class="n">u1</span><span class="o">*</span><span class="p">(</span><span class="n">y1</span><span class="o">-</span><span class="n">dy</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">y2</span><span class="o">*</span><span class="n">dy</span><span class="p">)</span> <span class="o">-</span> <span class="n">grav</span><span class="o">*</span><span class="p">(</span><span class="n">y1</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">y2</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">dy</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">200</span><span class="p">):</span>
+    <span class="n">uj</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="mf">0.1</span>
+    <span class="n">lhs</span> <span class="o">=</span> <span class="n">uj</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">dy</span><span class="o">/</span><span class="n">y2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">u1</span><span class="o">*</span><span class="p">(</span><span class="n">y1</span><span class="o">-</span><span class="n">dy</span><span class="p">)</span><span class="o">*</span><span class="n">uj</span><span class="o">/</span><span class="n">y2</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">lhs</span><span class="o">-</span><span class="n">rhs</span><span class="p">)</span> <span class="o">&lt;=</span><span class="mi">2</span><span class="p">:</span> <span class="c1">#only print when close</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;uj = &#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">uj</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;LHS = &#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;RHS = &#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">rhs</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>So for a <span class="math notranslate nohighlight">\(\Delta y\)</span> of 0.1, the required jet speed is somewhere around 10.1 feet per second.  Now we need to determine the total jet area, and nominal sizes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">areajet</span> <span class="o">=</span> <span class="n">dy</span><span class="o">*</span><span class="n">width</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="k">def</span> <span class="nf">howManyJets</span><span class="p">(</span><span class="n">jetarea</span><span class="p">,</span><span class="n">diameter</span><span class="p">):</span>
+    <span class="n">perjet</span> <span class="o">=</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">diameter</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">if</span> <span class="n">jetarea</span><span class="o">%</span><span class="n">perjet</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">howManyJets</span> <span class="o">=</span> <span class="n">jetarea</span><span class="o">/</span><span class="n">perjet</span>
+    <span class="k">elif</span> <span class="n">jetarea</span><span class="o">%</span><span class="n">perjet</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">howManyJets</span> <span class="o">=</span> <span class="n">jetarea</span><span class="o">//</span><span class="n">perjet</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">howManyJets</span>
+
+<span class="n">inches</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">12</span>
+<span class="n">howManyJets</span><span class="p">(</span><span class="n">areajet</span><span class="p">,</span><span class="n">inches</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>So for <span class="math notranslate nohighlight">\(\Delta y\)</span> of 0.1 we will need 147 1-inch diameter jets.  The next step is to refine and generalize our solution so we can explore different speeds - for example a 10 ft/sec jet will probably skin a fish, not healthy for our application.</p>
+<p>For refinement, lets improve the precision of the jet speed calculation (i.e. automate the matching of lhs and rhs)</p>
+<p>More to come</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>list them here, link where possible</p></li>
+<li><p>list them here, link where possible</p></li>
+<li><p>list them here, link where possible</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./examples/fluids-fishrace"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../software-responsible/softwareQA.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">CE XXXX Title</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Department of Civil, Environmental, and Construction Engineering<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

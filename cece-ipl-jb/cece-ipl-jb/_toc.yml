@@ -4,9 +4,12 @@
 format: jb-book
 root: intro
 chapters:
-- file: feasibilities/feasibilities
-- file: bioinspire/nature-inspired-one
-- file: statics-truss/statics
-- file: hydrology/EvaporationAnalysis
-- file: bioinspire/nature-inspired-two
-- file: software-responsible/softwareQA # comment
+- file: examples/feasibilities/feasibilities
+- file: examples/bioinspire/nature-inspired-one
+- file: examples/background/mechanics-bg
+- file: examples/statics-inspiration/statics-inspiration
+- file: examples/statics-truss/statics
+- file: examples/hydrology/EvaporationAnalysis
+- file: examples/bioinspire/nature-inspired-two
+- file: examples/software-responsible/softwareQA # comment
+- file: examples/fluids-fishrace/fluids
