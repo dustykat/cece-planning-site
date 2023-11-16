@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Resources Engineering in WCOE at Texas Tech University &#8212; CECE Downstream IPL</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="How to make an ordinary homework problem into a computational thinking exercise - Fluid Mechanics" href="../fluids-fishrace/fluids.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/ipl-logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CECE Downstream IPL</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome to the CECE Instructor Problem Library
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../feasibilities/feasibilities.html">
+   Feasibilities
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bioinspire/nature-inspired-one.html">
+   CE 2201 Materials for Constructed Facilities
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../background/mechanics-bg.html">
+   Computational Thinking in Engineering Mechanics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../statics-inspiration/statics-inspiration.html">
+   CE 2301 Statics - Inspiration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../statics-truss/statics.html">
+   CE 2301 Engineering Mechanics (Statics)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hydrology/EvaporationAnalysis.html">
+   CE 3354 Engineering Hydrology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bioinspire/nature-inspired-two.html">
+   ENVE 4385 Microbial  Applications  in  Environmental  Engineering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-responsible/softwareQA.html">
+   CE XXXX Title
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fluids-fishrace/fluids.html">
+   How to make an ordinary homework problem into a computational thinking exercise - Fluid Mechanics
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Water Resources Engineering in WCOE at Texas Tech University
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/examples/WRmarket/WRmarketing.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fexamples/WRmarket/WRmarketing.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/examples/WRmarket/WRmarketing.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#research-themes-with-links-to-faculty-and-or-products">
+   Research Themes (with links to faculty and/or products):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#program-features-and-curriculum">
+   Program features and curriculum
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#core-courses">
+   Core Courses
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#engineering-electives">
+   Engineering Electives
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="water-resources-engineering-in-wcoe-at-texas-tech-university">
+<h1>Water Resources Engineering in WCOE at Texas Tech University<a class="headerlink" href="#water-resources-engineering-in-wcoe-at-texas-tech-university" title="Permalink to this headline">¶</a></h1>
+<p>A draft script for marketing at TTU</p>
+<p>Start with some cool picture montage with water, engineering, and people</p>
+<p><img alt="Opening Shot: Aerial view of a picturesque river and landscapes with soothing music" src="../../_images/LakePillsbury.png" /></p>
+<p><strong>Voiceover: “Welcome to the Whitacre College of Engineering, where passion meets purpose, and innovation flows as freely as water.”</strong></p>
+<hr>
+<p>Then montage of some old dude using Apple iChalk to communicate, and youngsters doing actual work</p>
+<p><img alt="Transition to scenes of students in labs, working on projects, and interacting with professors" src="../../_images/professor.png" /></p>
+<p><strong>Voiceover: “Are you ready to make a splash in the world of Water Resources Engineering? At the Whitacre College of Engineering, we invite you to dive into our graduate research program and unlock the door to a world of endless possibilities.”</strong></p>
+<!--[Cut to shots of cutting-edge water research facilities]-->
+<p><strong>Voiceover: “Our program is designed for those who are not just seeking a degree but are driven by a desire to solve the pressing challenges our world faces in managing water resources.”</strong></p>
+<hr><p>Montage of faculty sitting in some boring meeting - should probably use TTU faculty, but the idea is to show us as happy engaged geniuses</p>
+<p><img alt="Shift to shots of faculty members discussing ongoing research" src="../../_images/faculty-talking.png" /></p>
+<p><strong>Voiceover: “Our distinguished faculty members are at the forefront of water research. From hydrology to water quality management, our experts are pushing the boundaries of knowledge and inspiring the next generation of water engineers.”</strong></p>
+<p>Then on to actual research - here are some pretty high level topics; our current faculty have fingers in each <em>which is kind of cool</em>!</p>
+<div class="section" id="research-themes-with-links-to-faculty-and-or-products">
+<h2>Research Themes (with links to faculty and/or products):<a class="headerlink" href="#research-themes-with-links-to-faculty-and-or-products" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Climate Change Resilience in Water Management</strong>:</p>
+<ul>
+<li><p>Investigate the impact of climate change on water availability, precipitation patterns, and extreme weather events. <a class="reference external" href="https://dataverse.tdl.org/dataset.xhtml?persistentId=doi:10.18738/T8/SVLCOQ">Texas Skew Update (includes recent large-magnitude events)</a></p></li>
+<li><p>Develop innovative strategies for adapting water infrastructure to changing climate conditions.</p></li>
+<li><p>Explore sustainable water management practices that can enhance resilience to climate-related challenges.</p></li>
+</ul>
+</li>
+<li><p><strong>Integrated Water Resource Management</strong>:</p>
+<ul>
+<li><p>Research methods for optimizing the use of surface water and groundwater resources. <a class="reference external" href="https://www.depts.ttu.edu/ceweb/faculty/shane_walker/index.php">Inland Desalination Technologies</a>; <a class="reference external" href="http://54.243.252.9/ce-4363-webroot/ce4363notes/_build/html/lessons/groundwatermodels/15gwmodels-examples.html">Groundwater Modeling</a></p></li>
+<li><p>Develop integrated models for watershed management that consider the interconnectedness of various water sources. <a class="reference external" href="http://freeswmm.ddns.net/freeswmm-webroot/swmmbyexample/_build/html/intro.html">Stormwater Modeling (Watershed Scale)</a></p></li>
+<li><p>Explore policies and governance structures that promote sustainable and equitable water allocation. <a class="reference external" href="https://www.depts.ttu.edu/ceweb/faculty/Clifford_B._Fedler/index.php">Natural Systems</a></p></li>
+</ul>
+</li>
+<li><p><strong>Water Quality and Contaminant Remediation</strong>:</p>
+<ul>
+<li><p>Study the sources and transport mechanisms of water pollutants, including emerging contaminants. <a class="reference external" href="https://www.depts.ttu.edu/ceweb/faculty/Danny_Reible/index.php">Fate and Transport</a></p></li>
+<li><p>Develop advanced technologies for water treatment and remediation. <a class="reference external" href="https://www.depts.ttu.edu/ceweb/faculty/jennifer_guelfo/index.php">Treatment&amp;Emerging Contaminants</a></p></li>
+<li><p>Investigate the impact of urbanization, industrial activities, and agricultural practices on water quality. <a class="reference external" href="https://www.depts.ttu.edu/ceweb/faculty/Clifford_B._Fedler/index.php">Natural Systems</a></p></li>
+</ul>
+</li>
+<li><p><strong>Smart Technologies for Water Monitoring and Management</strong>:</p>
+<ul>
+<li><p>Explore the use of sensors, remote sensing, and data analytics for real-time water quality and quantity monitoring. <a class="reference external" href="http://theodore-odroid.ttu.edu/129.118.101.130/">Fixture-Level Monitoring</a></p></li>
+<li><p>Develop smart water infrastructure that can respond dynamically to changing conditions. <a class="reference external" href="https://www.depts.ttu.edu/hums/">HUMS Demonstrator</a></p></li>
+<li><p>Investigate the potential of artificial intelligence and machine learning in optimizing water distribution and treatment systems. <a class="reference external" href="http://54.243.252.9/ce-5319-webroot/ce5319jb/_build/html/intro.html">Machine Learning</a></p></li>
+</ul>
+</li>
+<li><p><strong>Sustainable Urban Water Planning</strong>:</p>
+<ul>
+<li><p>Examine the challenges of water supply and demand in rapidly growing urban areas. <a class="reference external" href="http://freeswmm.ddns.net/ects-epanet/ects-epanet-notes/_build/html/intro.html">Network Modeling</a></p></li>
+<li><p>Research green infrastructure solutions for stormwater management and urban flooding. <a class="reference external" href="http://54.243.252.9/ce-3372-webroot/1-Lessons/Lesson24/PowerPointInLecture/CE3372-Lesson24.pdf">Green Infrastructure</a></p></li>
+<li><p>Explore the integration of water-sensitive urban design principles to create resilient and sustainable urban water systems. <span class="xref myst">Green Infrastructure Modeling (Neighborhood Scale)</span></p></li>
+</ul>
+</li>
+</ul>
+<p>These research themes encompass a range of emerging concerns in water resources engineering, from the impacts of climate change to the development of smart technologies for efficient water management. Researchers in these areas contribute to addressing the evolving challenges in water resources and ensuring a sustainable and resilient water future.  The selected links above are to provide a sample of our <a class="reference external" href="https://www.depts.ttu.edu/waterresources/faculty/index.php">faculty’s</a> skills and research products.</p>
+<p><strong>Voiceover: “At Texas Tech University, we believe in the power of collaboration. Our partnerships with industry leaders provide our students with unique opportunities for internships and real-world projects, ensuring they graduate with the skills and connections needed to make a difference.”</strong></p>
+<hr><p>A short pitch to illustrate courses we offer, but not too detailed, mostly that we have a set of core courses to provide future employers with an expectation of some current marketable skills, and then speciality courses.</p>
+</div>
+<div class="section" id="program-features-and-curriculum">
+<h2>Program features and curriculum<a class="headerlink" href="#program-features-and-curriculum" title="Permalink to this headline">¶</a></h2>
+<p><strong>Voiceover: “Our comprehensive curriculum covers a spectrum of topics, from advanced hydrodynamics to sustainable water resource development. You’ll have the chance to tailor your studies to your interests, ensuring you graduate with the expertise needed to tackle the complexities of water engineering.”</strong></p>
+<p>Our courses for a <a class="reference external" href="https://www.depts.ttu.edu/ceweb/grad/documents/HANDBOOK_FOR_GRADUATE_STUDENT-20221118.pdf">Master’s Degree</a> are comprised of core courses to prepare all our graduates in industry relevant skills, and electives which are individually selected based on interest and professor availability.</p>
+</div>
+<div class="section" id="core-courses">
+<h2>Core Courses<a class="headerlink" href="#core-courses" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>CE 5360 Open Channel Hydraulics</p></li>
+<li><p>CE 5361 Surface Water Hydrology</p></li>
+<li><p>CE 5363 Groundwater Hydrology</p></li>
+<li><p>CE 5366 Water Resources Management</p></li>
+<li><p>Geographic Information Systems course (approved by advisor)</p></li>
+</ol>
+</div>
+<div class="section" id="engineering-electives">
+<h2>Engineering Electives<a class="headerlink" href="#engineering-electives" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>CE 5313 Probabilistic Methods of Civil Engineering</p></li>
+<li><p>CE 5319 Machine Learning for Civil Engineers</p></li>
+<li><p>CE 5349 Performance-Based Engineering</p></li>
+<li><p>CE 5362 Surface Water Modeling</p></li>
+<li><p>CE 5364 Groundwater Transport Phenomena</p></li>
+<li><p>CE 5368 Surface Water Quality Modeling</p></li>
+<li><p>CE 5391 Advanced Water Treatment</p></li>
+</ol>
+<p>** Other environmental, civil, or other engineering graduate course approved by graduate advisor</p>
+<p>The <a class="reference external" href="https://www.depts.ttu.edu/ceweb/grad/documents/HANDBOOK_FOR_GRADUATE_STUDENT-20221118.pdf">Doctorate Degree</a> has no specific course list, but equivalency in the core courses above are expected plus a coherent specialization in support of a research theme.</p>
+<hr><p><img alt="Closing scene: Students celebrating graduation" src="../../_images/graduation.png" /></p>
+<p><strong>Voiceover: “Join us at Texas Tech University, where your journey in Water Resources Engineering begins. Together, let’s create waves of change and shape a sustainable future.”</strong></p>
+<p><img alt="Closing shot: University logo and contact information" src="../../_images/105023.png" /></p>
+<p><strong>Voiceover: “Apply now and be part of a community that’s making a difference. <a class="reference external" href="https://www.ttu.edu/">Texas Tech University</a>, where innovation flows, and your future takes shape.”</strong></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./examples/WRmarket"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../fluids-fishrace/fluids.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">How to make an ordinary homework problem into a computational thinking exercise - Fluid Mechanics</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Department of Civil, Environmental, and Construction Engineering<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

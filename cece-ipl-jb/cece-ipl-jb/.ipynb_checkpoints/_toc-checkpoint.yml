@@ -13,3 +13,4 @@ chapters:
 - file: examples/bioinspire/nature-inspired-two
 - file: examples/software-responsible/softwareQA # comment
 - file: examples/fluids-fishrace/fluids
+- file: examples/WRmarket/WRmarketing
